@@ -1,0 +1,257 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root{
+  --green-color:#7acc3d;
+  --white-color:white;
+  --black-color:#313337;
+  /* tipografia */
+  --normal:12px;
+  /* espaciado */
+  --space:10px;
+  /* box shadow */
+  --box:0px 0 2px 1px #e6e5e9
+
+}
+
+html,body{
+padding:0px;
+margin:0px;
+font-size: var(--normal);
+font-family: 'Open Sans', sans-serif;
+}
+
+p,label{
+  font-size: var(--normal);
+}
+
+nav{
+  display: flex;
+  background-color: var(--green-color);
+  padding: var(--space);
+  color: var(--white-color);
+  justify-content: space-between;
+  align-items: center;  /* se centran los elementos */
+}
+
+nav ul{
+  display: flex;
+}
+
+nav li{
+  padding-left: 20px;
+  list-style: none; /*cuando utilisas la etiqueta li para hacer listas se ponen unos puntos y en css para quitarlos se usa esta propiedad */
+}
+
+nav li a{
+    color: var(--black-color);
+    text-decoration: none;/*cuando combiertes un texto en un boton se le pone una linea en la parte de abajo y esa se quita con esta propiedad */
+}
+
+nav li a:hover{
+  color: var(--white-color);
+}
+ /*-----------------------------main section*/
+
+ .main_section{
+   padding: 15%;
+   text-align: center;
+ }
+
+.products{
+  background-image: url("../images/curve.png");
+  height: 50px;
+  /* max-height:50px; */
+  background-size: cover;
+  background-position: center top;
+  padding:25%;
+  display: flex; /*es para poner un elemento alado del otro */
+  /* padding-bottom: 200px; /*esta madre no va en el original pero funciona :v*/
+  /* height: auto; */
+  /* flex-wrap: wrap; */
+
+  /* border: 1px solid red; */
+}
+.product{
+  padding: var(--space);
+  margin-top: -260px;
+
+}
+.product .content{
+  background-color: var(--white-color);
+  padding: 15px;
+  box-shadow: var(--box);
+}
+.img-content{
+  text-align: center;
+}
+
+.main-button{
+  background-color: var(--green-color);
+  width: 100%;
+  padding: var(--space);
+  font-size: var(--normal);
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.main-button:hover{ /*el efecto mas prro >:D es para darle otro color al boton cuando se pasa el mous encima :3*/
+  background-color: #5e9e22;
+}
+.descrip{
+  display: flex;
+margin-top: 0px;
+justify-content: space-around;
+/* border: 1px solid red; */
+height: 500px;
+align-items: center;
+
+}
+.content-descrip{
+/* border: 1px solid red; */
+margin: 0px 40px 0px 40px;
+width: 250px;
+height: 400px;
+}
+
+.img{
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  /* flex-shrink: 0; */
+}
+.title-descrip{
+  /* border: 1px solid red; */
+  text-align: center;
+}
+.text-descrip{
+  /* border: 1px solid red; */
+  margin: 20px 0 0 20px; */
+  /* text-align: center; */
+  width: 200px
+
+}
+.menciones{
+  border: 1px solid #e6e5e9;
+  /* display: flex; */
+  /* justify-content: space-evenly; */
+  /* width: 240px; */
+  height: 450px;
+}
+.title-container{
+  /* border: 1px solid red; */
+  margin: 100px 0 50px 0;
+}
+.title-menciones{
+  margin: 0;
+  text-align: center;
+
+}
+.people-menciones{
+  display: flex;
+  justify-content: center;
+}
+.content-menciones{
+  width: 240px;
+  height: 200px;
+  box-shadow: var(--box);
+  margin: 0 5px 0 5px;
+}
+.img-menciones{
+  object-fit: cover;
+}
+.name-menciones{
+  /* border: 1px solid red; */
+  margin: 0;
+}
+.opinion-menciones{
+  /* border: 1px solid red; */
+  margin-top: 5px;
+  padding-left: 5px;
+}
+.footer{
+  background-color:#313337;
+  /* border: 1px solid red; */
+  height: 60px;
+
+}
+.container-footer{
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.container-tyc{
+  color: white;
+  /* border: 1px solid red; */
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.container-contacto{
+  color: white;
+  /* border: 1px solid red; */
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.container-contacto a{
+  color: var(--green-color);
+}
+/* ---------------------------------inicia productos */
+.product-container{
+  /* display: flex; */
+  align-items: center;
+}
+.title-products{
+  /* align-items: center; */
+  /* border: 1px solid red; */
+  /* text-align: left; */
+  margin-left: 8.3333333333%;
+  margin-top: 50px;
+}
+.content-products{
+  display: block;
+}
+.product3{
+  /* display: block; */
+  /* border: 1px solid green; */
+  display: flex;
+  align-items: center;
+  margin: 50px 0 50px 0;
+  /* float: left; */
+}
+
+.img-p3{
+  width: 200px;
+  height: 200px;
+}
+/*----------------------------------termina productos */
+/*--------------------------------------- venta*/
+
+.modulo-pago{
+  background-color: var(--white-color);
+  box-shadow: var(--box);
+  padding: var(--space);
+
+}
+  /* width: 100%; */
+.modulo-pago-images{
+  max-width: 150px;
+  text-align: center;
+  margin: auto; /*esta madre esta bien bergas para centrar una imagen lo
+  que hace es que el espacio del lado izquierdo y derecho se igualan*/
+
+}
+.data{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 100%;      /*esta cosa sirve para que un elemento use todo el espacio dela caja en la que esta alojada*/
+  height: 35px;     /*creo que es espaciado entre lineas*/
+  border-radius: 2px;
+  border: 1px solid ;
+  box-sizing: border-box; /*esta madre le sirve a width como referencia
+  significa que usara de referencia el borde de la caja padre*/
+}
+
+.modulo-pago .main-button{
+  margin-top: 10px;
+}

@@ -1,0 +1,94 @@
+<!-- comando shift "/" para poner todo en comentario :3 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+  <meta name="description" content="este es un sitio de productos geniales">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/animation.css">
+
+  <title>brand</title>
+
+</head>
+<body>
+  <nav class="fadeindown">
+    <div class="brand_image">
+      <img src="images/logo.png" alt="">
+    </div>
+    <div class="nav_options"></div>
+      <ul class="mini-menu">
+        <li><a href="#">Faqs </a></li>
+        <li><a href="#">producto y descripcion</a></li>
+      </ul>
+  </nav>
+
+<!-- empieza el formulario de venta -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+
+  <div class="row">
+    <div class="col-4">
+      <div class="modulo-pago">
+        <div class="modulo-pago-images">
+          <img src="images/box2.png" alt="">
+        </div>
+        <h3>
+          Producto 1
+        </h3>
+        <p>
+          Miles de productos hay en el mercado pero nada como una caja con gatitos
+        </p>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="modulo-pago">
+                                  <!-- method es para adjuntar la informacion y enviarlo si no lo pones no jala el link  -->
+        <form class="" action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Q598ZFM9TPW42" method="post">
+          <label for="name">Nombre</label>
+          <br>
+          <input type="text" placeholder="" name="first_name" class="data"><br>
+          <label for="name">E-mail</label>
+          <br>
+          <input type="text" placeholder="" name="email" class="data"><br>
+          <label for="Phone">Telefono</label>
+          <br>
+          <input type="text" placeholder="" name="Phone" class="data"><br>
+          <input type="submit" class="main-button" name="submit" value="Confirmar pago">
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- termina el formulario de venta -->
+
+  <footer class="footer">
+    <div class="container-footer">
+      <div class="container-tyc">
+          <p>Terminos y condiciones</p>
+      </div>
+      <div class="container-contacto">
+          <p>contacto.@hotmail.com</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+@media (max-width: 600px){
+
+.products{
+  display: inherit;
+  height: auto;
+}
+.product{
+  margin-top: auto;
+}
+.descrip{
+    height: 1000px;
+    padding:20%;
+  display: inherit;
+  margin-bottom: 40px;
+}
+
+.menciones{
+height: 1000px;
+}
+.title-container{
+  margin-top:50px;
+}
+.people-menciones{
+  display: inherit;
+  padding: 0px 25% 0 30%;
+  /* align-items: center; */
+}
+
+}
